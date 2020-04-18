@@ -1,5 +1,44 @@
 body{
     background: #141218 url('../img_min/bg.jpg') top right no-repeat;
-    background-attachment: fixed;
- 
+    background-attachment: fixed; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1150px;
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.logo{
+    margin-right: 60px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    &__item{
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 16px;
+        &:not(:last-child){
+            margin-right: 25px;
+        }
+    }
+}
+
+.socialmedia{
+    &__item{
+        &:not(:last-child){
+            margin-right: 25px;
+        }
+    }
 }
