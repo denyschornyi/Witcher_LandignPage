@@ -59,6 +59,8 @@ body{
 
 
 .main{
+    display: flex;
+    justify-content: space-between;
     .short-info{
         display: inline-block;
         font-size: 14px;
@@ -104,7 +106,34 @@ body{
         background-color: #9D2929;
         text-decoration: none;
         color: #fff;
-
+        margin-bottom: 40px;
     }
     
+}
+
+.button-play{
+    display: block;
+    margin-right: 17%;
+    margin-top: 11%;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background:  #9D2929 url('../img_min/play.svg') no-repeat center right 26px;
+    position: relative;
+
+
+}
+.button-play::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -16px;
+    left: -16px;    
+    width: 132px;
+    height: 132px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(157,41,41, 0.5);
+    z-index: -1;
 }
