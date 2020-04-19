@@ -220,3 +220,62 @@ footer{
         }
     }
 }
+
+@media(max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media(max-width: 992px){
+    .container{
+        max-width: 720px;
+    }
+    .button-play{
+        display: none;
+    }
+}
+
+@media(max-width:768px){
+    body{
+        background-size: 130%;
+        background-position: top right -100px;
+    }
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media(max-width: 576px){
+    .container{
+        max-width: 90%;
+    }
+    .header{
+        margin-top: 20px;
+        margin-bottom: 45px;
+    }
+    .main{
+        &__title{
+            font-weight: 500;
+            font-size: 56px;
+            line-height: 66px;
+        }
+        &__description{
+            width: 315px;
+            font-size: 14px;
+            line-height: 150%;
+        }
+    }
+    .footer{
+        flex-wrap: wrap;
+    }
+    .copyright{
+        order: 0;
+        flex-basis: 100%;
+        margin-bottom: 7px;
+    }
+    .policy{
+        order: 2;
+        flex-basis: 100%;
+    }
+}
