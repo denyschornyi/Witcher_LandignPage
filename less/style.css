@@ -28,6 +28,10 @@ body {
   margin-top: 40px;
   margin-bottom: 90px;
 }
+.close {
+  font-size: 50px;
+  display: none;
+}
 .logo {
   margin-right: 60px;
 }
@@ -218,7 +222,7 @@ footer {
 @media (max-width: 768px) {
   body {
     background-size: 130%;
-    background-position: top right -100px;
+    background-position: top right -80px;
   }
   .container {
     max-width: 540px;
@@ -253,5 +257,48 @@ footer {
   .policy {
     order: 2;
     flex-basis: 100%;
+  }
+  body {
+    position: relative;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 250px;
+    height: 263px;
+    background: #9D2929;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+  }
+  .close {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 38px;
+  }
+  .logo {
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    order: 1;
+  }
+  .nav {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .nav__item {
+    margin-right: 0 !important;
+    margin-bottom: 17px;
+  }
+  .socialmedia {
+    order: 2;
+    margin-bottom: 22px;
   }
 }
