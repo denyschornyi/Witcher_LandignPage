@@ -196,3 +196,27 @@ body{
 .slider-left span , .slider-right span{
     display: none;
 }
+footer{
+    background: #141218;
+}
+.footer{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #727174;
+}
+.policy{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &__term{
+        color: #727174;
+        text-decoration: none; 
+        &:not(:last-child){
+            margin-right: 25px;
+        }
+    }
+}
