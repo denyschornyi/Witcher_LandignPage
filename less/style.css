@@ -32,6 +32,11 @@ body {
   font-size: 50px;
   display: none;
 }
+.burger {
+  display: none;
+  font-size: 50px;
+  cursor: pointer;
+}
 .logo {
   margin-right: 60px;
 }
@@ -261,6 +266,9 @@ footer {
   body {
     position: relative;
   }
+  .header-wrap {
+    display: none;
+  }
   .header {
     display: flex;
     flex-direction: column;
@@ -279,6 +287,12 @@ footer {
     position: absolute;
     top: 25px;
     right: 38px;
+    cursor: pointer;
+  }
+  .burger {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
   }
   .logo {
     margin: 0 auto;

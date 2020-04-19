@@ -1,4 +1,11 @@
 $(document).ready(function(){
+    $('.burger').click(function(){
+        $('.header-wrap').css('display', 'block');
+    });
+    $('.close').click(function(){
+        $('.header-wrap').css('display', 'none');
+    });
+
     $('.owl-carousel').owlCarousel({
         navClass: ['slider-left', 'slider-right'],
         margin:0,
